@@ -4,9 +4,9 @@ import styled from "styled-components";
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.mainBg};
   background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
+    return theme.colors.mainBgpreto;
   }};
   border-radius: 4px;
   overflow: hidden;
@@ -22,6 +22,8 @@ const Widget = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    letter-spacing: 1px;
+    
   }
 `;
 

@@ -24,10 +24,10 @@ export default function Home() {
       <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1> Lolzinho</h1>
+            <h1> {db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Lorem</p>
+            <p>{db.description}</p>
           </Widget.Content>
         </Widget>
         <Widget>
