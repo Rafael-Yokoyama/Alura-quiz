@@ -7,7 +7,7 @@
         "image": "https://media.giphy.com/media/U4vEhMLEdu4rjhDpJr/giphy.gif",
         "title": "De que empresa surgiu o LOL?",
         "description": "Essa é pra aquecer",
-        "answer": 3,
+        "answer": 1,
         "alternatives": [
           "Epic Games",
           "Riot Games",
@@ -19,25 +19,12 @@
         "image": "https://media.giphy.com/media/l0K43RPRCJ5BQIUJW/giphy.gif",
         "title": "Em que dia/mês/ano o LOL foi lançado??",
         "description": "Faz tempo em haha",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
            "dia 15 de dezembro de 2009",
-           "dia 4 de setembro de 2009",
+           "dia 27 de outubro de 2009",
            "dia 10 de abril de 2009",
-           "dia 15 de dezembro de 2009"
-          
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Em que dia/mês/ano o LOL foi lançado??",
-        "description": "Faz tempo em haha",
-        "answer": 2,
-        "alternatives": [
-           "dia 15 de dezembro de 2009",
-           "dia 4 de setembro de 2009",
-           "dia 10 de abril de 2009",
-           "dia 15 de dezembro de 2009"
+           "dia 15 de setembro  de 2009"
           
         ]
       }
