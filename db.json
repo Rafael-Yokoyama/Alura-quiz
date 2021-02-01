@@ -1,28 +1,44 @@
 {
     "bg": " https://i.ytimg.com/vi/jT8yWIDgzSQ/maxresdefault.jpg",
     "title": "Quiz League of Legends ",
-    "description": "Teste os seus conhecimentos sobre os personagens das  skins Estrela Negra   ",
+    "description": "Teste os seus conhecimentos sobre o LOLZINHO   ",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/U4vEhMLEdu4rjhDpJr/giphy.gif",
+        "title": "De que empresa surgiu o LOL?",
         "description": "Essa é pra aquecer",
+        "answer": 3,
+        "alternatives": [
+          "Epic Games",
+          "Riot Games",
+          "Disney",
+          "Hasbro"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l0K43RPRCJ5BQIUJW/giphy.gif",
+        "title": "Em que dia/mês/ano o LOL foi lançado??",
+        "description": "Faz tempo em haha",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+           "dia 15 de dezembro de 2009",
+           "dia 4 de setembro de 2009",
+           "dia 10 de abril de 2009",
+           "dia 15 de dezembro de 2009"
+          
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "title": "Em que dia/mês/ano o LOL foi lançado??",
         "description": "Faz tempo em haha",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "dia 15 de dezembro de 2009",
+           "dia 4 de setembro de 2009",
+           "dia 10 de abril de 2009",
+           "dia 15 de dezembro de 2009"
+          
         ]
       }
     ],
