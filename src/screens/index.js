@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Lottie } from '@crello/react-lottie';
 // import db from '../../../db.json';
-import Widget from '../../components/Widget';
-import QuizLogo from '../../components/QuizLogo';
+import Widget from '../../componentes/Widget';
+import QuizLogo from '../../componentes/QuizLogo';
 import QuizBackground from '../../componentes/QuizBackground';
 import QuizContainer from '../../componentes/QuizContainer';
 import AlternativesForm from '../../componentes/AlternativesForm';
