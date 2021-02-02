@@ -1,16 +1,15 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
-import { Lottie } from '@crello/react-lottie';
+// import { Lottie } from '@crello/react-lottie';
 // import db from '../../../db.json';
 import Widget from '../../components/Widget';
-import QuizLogo from '../../componentes/QuizLogo';
+import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../componentes/QuizBackground';
 import QuizContainer from '../../componentes/QuizContainer';
 import AlternativesForm from '../../componentes/AlternativesForm';
 import Button from '../../componentes/Button';
 import BackLinkArrow from '../../componentes/BackLinkArrow';
 
-import loadingAnimation from './animations/loading.json';
+//import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
   return (
@@ -36,7 +35,7 @@ function ResultWidget({ results }) {
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
+            <li key={`result__${index}`}>
               #
               {index + 1}
               {' '}
@@ -60,12 +59,12 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        <Lottie
+        {/* <Lottie
           width="200px"
           height="200px"
           className="lottie-container basic"
           config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
-        />
+        /> */}
       </Widget.Content>
     </Widget>
   );
@@ -157,9 +156,6 @@ function QuestionWidget({
         </AlternativesForm>
       </Widget.Content>
     </Widget>
-    
-
-
   );
 }
 
@@ -168,6 +164,7 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
+
 export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
