@@ -5,6 +5,7 @@
 const FooterWrapper = styled.footer`
   background-color: #00000070;
   padding: 20px;
+
   display: flex;
   align-items: center;
   border-radius: 4px; 

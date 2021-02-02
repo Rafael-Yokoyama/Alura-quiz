@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 const AlternativesForm = styled.form`
   label {
+    background-color:#000;
     &[data-selected="true"] {
-      background-color: ${({ theme }) => theme.colors.primary};
+      background-color: ${({ theme }) => theme.colors.secondary};
       
       &[data-status="SUCCESS"] {
         background-color: ${({ theme }) => theme.colors.success};
@@ -16,6 +17,7 @@ const AlternativesForm = styled.form`
     }
     &:focus {
       opacity: 1;
+      
     } 
   }
   button {

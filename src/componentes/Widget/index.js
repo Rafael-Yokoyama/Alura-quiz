@@ -46,8 +46,12 @@ Widget.Content = styled.div`
     margin-bottom: 0;
   }
   ul {
+ 
     list-style: none;
     padding: 0;
+  }
+  li{
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 `;
 

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+// eslint-disable-next-line import/no-unresolved
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/componentes/Widget';
@@ -11,6 +13,7 @@ import QuizBackground from '../src/componentes/QuizBackground';
 import QuizLogo from '../src/componentes/QuizLogo';
 import Input from '../src/componentes/Input';
 import Button from '../src/componentes/Button';
+import Link from '../src/componentes/Link';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -33,7 +36,17 @@ export default function Home() {
       </Head>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        
+        >
           <Widget.Header>
             <h1>
               {' '}
@@ -59,13 +72,51 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget
+         as={motion.section}
+         transition={{ delay: 0.5, duration: 0.5 }}
+         variants={{
+           show: { opacity: 1 },
+           hidden: { opacity: 0 },
+         }}
+         initial="hidden"
+         animate="show"
+        
+        >
           <Widget.Content>
             <h1> Quiz da galera</h1>
-            <p>Lorem lorem</p>
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.footer}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/Rafael-Yokoyama" />
     </QuizBackground>
